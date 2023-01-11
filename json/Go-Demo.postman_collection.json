@@ -1,0 +1,125 @@
+{
+	"info": {
+		"_postman_id": "72fa07da-6eb2-4b2e-9660-669f05075469",
+		"name": "Go-Demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"author\":\"Satadeep Dasgupta\",\r\n    \"title\":\"Shadow profits in the data economy: unravelling the harms caused by ‘data brokers’\",\r\n    \"content\":\"‘Data’ is everywhere. A day doesn’t go by without a news story of how it is changing our lives: new businesses, new ways of working, new products, new crime. But despite the data revolution, it’s easy to feel detached. The impact of the change isn’t always obvious. To many of us, it can feel like our data is everywhere, and yet nowhere to be seen.↵↵At least, not by us. For those in the business, our data is an everyday commodity. The clues are out there: a well-targeted advert that makes you look at your phone and wonder if it’s listening to you, or a map app accurately forecasting a traffic jam, or a new tick box on a website you used to visit. We’ve heard of the platforms we use every day and we know data is a critical part of their success. But do we know who else is profiting from our digital lives? Do we know at what scale, to what ends, and what the impacts of this are and will be in the future for us and others?↵↵Data in the dark↵↵I suspect – just like me – your answer to these questions is a straightforward “no”, and therein lies the problem. For there is, in fact, a whole data economy – more disparate perhaps but no less dangerous than that of the tech giants – of underegulated, under-scrutinised ‘data brokers’, in some cases acting outright illegally, who are profiting from the sale of your personal information.↵↵Data brokerage, as Duke University Cyber Policy Fellow Justin Sherman describes it, is “the practice of buying, aggregating, selling, licensing, and otherwise sharing individuals’ data”. It is a huge, harmful, opaque and unjust part of the data economy. We have some sense of its scale, with a reported global market revenue of $232.634 billion in 2019 expected to reach $345.153 billion by 2026. We know they can cause harm, though often their role in contributing to harms has not been the focus of attention. Recently five UK companies were alleged to be deliberately targeting the elderly with “predatory” and “coercive” marketing calls, based on the kinds of contact lists data brokers sell. With indirect impacts like this, the harms of data brokerage could be far greater, not least from sensitive personal data moving between hands. As Sherman highlighted in Wired last year, “entire databases of citizen information are ready for purchase, whether to predatory loan companies, law enforcement agencies, or even malicious foreign actors”.↵↵We have some sense of their practices, of gathering data from individuals or from the companies and sites they own, of buying, repackaging, licensing and selling data profiles of people (often of dubious accuracy). At the same time there is so much more we don’t understand; an opacity they have most likely cultivated deliberately. Indeed, this information asymmetry, where the brokers possess personal information on us, but we have little insight into the very same, is core to their continued success – until now.\",\r\n    \"image\":\"https://www.incimages.com/uploaded_files/image/1920x1080/getty_180152187_970679970450042_64007.jpg\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/blogs/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"blogs",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/blogs/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"blogs",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "author",
+							"value": "New Author",
+							"type": "text"
+						},
+						{
+							"key": "title",
+							"value": "Shadow profits in the data economy: unravelling the harms caused by ‘data brokers’",
+							"type": "text"
+						},
+						{
+							"key": "content",
+							"value": "‘Data’ is everywhere. A day doesn’t go by without a news story of how it is changing our lives: new businesses, new ways of working, new products, new crime. But despite the data revolution, it’s easy to feel detached. The impact of the change isn’t always obvious. To many of us, it can feel like our data is everywhere, and yet nowhere to be seen.\n\nAt least, not by us. For those in the business, our data is an everyday commodity. The clues are out there: a well-targeted advert that makes you look at your phone and wonder if it’s listening to you, or a map app accurately forecasting a traffic jam, or a new tick box on a website you used to visit. We’ve heard of the platforms we use every day and we know data is a critical part of their success. But do we know who else is profiting from our digital lives? Do we know at what scale, to what ends, and what the impacts of this are and will be in the future for us and others?\n\nData in the dark\n\nI suspect – just like me – your answer to these questions is a straightforward “no”, and therein lies the problem. For there is, in fact, a whole data economy – more disparate perhaps but no less dangerous than that of the tech giants – of underegulated, under-scrutinised ‘data brokers’, in some cases acting outright illegally, who are profiting from the sale of your personal information.\n\nData brokerage, as Duke University Cyber Policy Fellow Justin Sherman describes it, is “the practice of buying, aggregating, selling, licensing, and otherwise sharing individuals’ data”. It is a huge, harmful, opaque and unjust part of the data economy. We have some sense of its scale, with a reported global market revenue of $232.634 billion in 2019 expected to reach $345.153 billion by 2026. We know they can cause harm, though often their role in contributing to harms has not been the focus of attention. Recently five UK companies were alleged to be deliberately targeting the elderly with “predatory” and “coercive” marketing calls, based on the kinds of contact lists data brokers sell. With indirect impacts like this, the harms of data brokerage could be far greater, not least from sensitive personal data moving between hands. As Sherman highlighted in Wired last year, “entire databases of citizen information are ready for purchase, whether to predatory loan companies, law enforcement agencies, or even malicious foreign actors”.\n\nWe have some sense of their practices, of gathering data from individuals or from the companies and sites they own, of buying, repackaging, licensing and selling data profiles of people (often of dubious accuracy). At the same time there is so much more we don’t understand; an opacity they have most likely cultivated deliberately. Indeed, this information asymmetry, where the brokers possess personal information on us, but we have little insight into the very same, is core to their continued success – until now.",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"value": "https://www.incimages.com/uploaded_files/image/1920x1080/getty_180152187_970679970450042_64007.jpg",
+							"type": "text"
+						},
+						{
+							"key": "date",
+							"value": "5/17/2022\n",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/blogs/update/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"blogs",
+						"update",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/blogs/delete/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"blogs",
+						"delete",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
